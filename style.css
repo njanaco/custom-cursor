@@ -1,0 +1,39 @@
+* {
+  cursor: none;
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+  
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  mix-blend-mode: difference;
+  background-color: #ef3e2d;
+}
+
+.cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  mix-blend-mode: difference;
+  background-color: #ef3e2d;
+}
+
+
+
+
+https://njana.design/wp-content/uploads/cursor-dot.svg
+https://njana.design/wp-content/uploads/cursor-dot-outline.svg
